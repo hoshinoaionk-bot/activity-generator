@@ -1,0 +1,2 @@
+# activity-generator
+AI generating
