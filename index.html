@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activity Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="app">
+  <h1>Classroom Activity Generator</h1>
+  <h2>Enter the generating button to start</h2>
+
+  <button id="generateBtn">Generate Activity</button>
+
+  <div id="loader" class="hidden">⁶🤷‍♂️⁷ Monkey.D.Sony is thinking...</div>
+
+  <div id="card" class="card hidden">
+    <h2 id="name"></h2>
+
+    <p><strong>Idea:</strong> <span id="idea"></span></p>
+    <p><strong>Benefit:</strong> <span id="benefit"></span></p>
+
+    <p><strong>Steps:</strong></p>
+    <ol id="steps"></ol>
+
+    <button id="nextBtn">Next Idea</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

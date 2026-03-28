@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+
+  /* BACKGROUND IMAGE */
+  background: url("imgg.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* DARK OVERLAY FOR READING*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* MAIN CONTAINER */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+
+  height: 100vh;             /* full screen height */
+  text-align: center;
+}
+
+/* TITLE */
+h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+/* BUTTONS */
+button {
+  padding: 18px 28px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #6c8cff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+button:hover {
+  background: #4e6eff;
+  transform: scale(1.15);
+}
+
+/* THE RESULT BOX */
+.card {
+  background: rgba(0, 0, 0, 0.8);
+
+  width: 85%;
+  max-width: 1000px;   /* much bigger */
+  
+  margin-top: 20px;
+  padding: 35px;
+
+  border-radius: 18px;
+  text-align: left;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  animation: fadeIn 0.5s ease;
+}
+
+.card h2 {
+  font-size: 32px;
+  margin-bottom: 19px;
+}
+
+.card p {
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* NOTHING */
+.hidden {
+  display: none;
+}
+
+/* LOADER TEXT */
+#loader {
+  margin-top: 20px;
+  font-style: italic;
+  animation: pulse 1s infinite;
+  font-size: 25px
+}
+
+/* LIST */
+ol {
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
